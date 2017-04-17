@@ -10,6 +10,10 @@ header {
   top: 0;
 }
 
+.text {
+  font-family: sans-serif;
+}
+
 .logo {
   float: right; /* hacemos que el logo lo posicione  al lado derecho*/
 }
@@ -23,7 +27,8 @@ header {
   font-weight: 700;
   padding: 21px;
   display: inline-block;
-
+  text-decoration: none;
+  color:black;
 }
 /*ESTILOS DE HOME -------------------------------------*/
 #home {
@@ -95,7 +100,7 @@ p {
 }
 
 /*ESTILOS DE MODEL BOX -----------*/
-img:hover {
+.box-work:hover {
   opacity: 0.7;
 }
 
@@ -104,7 +109,7 @@ img:hover {
 .modal {
     display: none; /* oculto por default */
     position: fixed; /* que se quede fijo */
-    z-index: 1; /* hasta en frente de todo */
+    z-index: 2; /* hasta en frente de todo */
     padding-top: 100px; /* colocacion de la caja */
     left: 0;
     top: 0;
@@ -122,4 +127,11 @@ img:hover {
   display: block;
   width: 80%;
   max-width: 700px;
+}
+
+span {
+  z-index: 1;
+  position: fixed;
+  color:white;
+  background-color:black;
 }
