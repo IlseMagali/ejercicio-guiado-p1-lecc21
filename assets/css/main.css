@@ -1,0 +1,125 @@
+.text-uppercase {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+/*ESTILOS DEL HEADER*/
+header {
+  position: fixed; /*hace que nuestro menu se quede fijo*/
+  background: white;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  float: right; /* hacemos que el logo lo posicione  al lado derecho*/
+}
+
+.menu {
+  padding: 14px 70px;
+  overflow: auto;
+}
+
+.link {
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+
+}
+/*ESTILOS DE HOME -------------------------------------*/
+#home {
+  background-image: url(../img/bg-home.jpg);/*imagen de portada*/
+  background-position: center; /*posicionar imagen al centro*/
+  background-repeat: no-repeat;/*no repetir la imagen de fondo*/
+  background-size: cover; /*cubre todo el tamaño del contenedor*/
+  height: 554px;/*altura de la section home*/
+  text-align: center; /*alineación al centro*/
+  margin-top:  80px; /*darle un margen en la parte de arriba del section home*/
+}
+
+#home .container {
+  color: white; /*color blanco de los textos*/
+  padding: 70px; /*relleno de 70 px en todos los lados*/
+}
+
+.text-home {
+  font-size: 53px;
+  font-family: sans-serif;
+}
+
+.btn-home {
+  background: #2ECC71; /*color de fondo*/
+  color: #fff; /*color del texto*/
+  padding: 11px 20px; /*relleno en el botón 11px (top - bottom) y 28px (left - right)*/
+  border-radius: 1px; /*redondear el borde*/
+  font-weight: 500;
+  text-transform: uppercase;/*convierte texto a mayúsculas*/
+  margin-top: 63px;/*margen en la parte de arriba*/
+  display: inline-block;
+  font-size: 14px;/*tamaño de letra*/
+}
+/*ESTILOS DE section services -----------*/
+#services {
+  background-color: #F17C72;
+  text-align: center;
+  color: #fff;
+  padding: 70px 7px;
+}
+
+.box-services {
+  display: inline-block;
+  width: 30%;
+  margin-top: 63px;
+}
+
+.text-services {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+/*ESTILOS DE section work -----------*/
+.box-work {
+ text-align: center;
+ display: inline-block;
+ padding: 10px 20px;
+}
+.box-work img {
+ width: 200px;
+ margin: 50px 50px;
+}
+.container {
+ text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/*ESTILOS DE MODEL BOX -----------*/
+img:hover {
+  opacity: 0.7;
+}
+
+/*estilo modal -----------*/
+
+.modal {
+    display: none; /* oculto por default */
+    position: fixed; /* que se quede fijo */
+    z-index: 1; /* hasta en frente de todo */
+    padding-top: 100px; /* colocacion de la caja */
+    left: 0;
+    top: 0;
+    width: 100%; /* ancho maximo */
+    height: 100%; /* alo maximo */
+    overflow: auto; /* scroll por si lo necesita */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/*estilo del contenido del modal box (images) -----------*/
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
